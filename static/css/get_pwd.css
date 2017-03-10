@@ -1,0 +1,82 @@
+body{
+	background-color: #fafafa;
+}
+#header .center{
+	width: 4rem;
+	line-height: 100%;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+/*输入内容区域*/
+#input_area{
+	width: 100%;
+	overflow: hidden;
+}
+#input_area li{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	background-color: #fff;
+	border-bottom: 1px solid #c1c1c1;
+	overflow: hidden;
+	display: -moz-box; 
+    display: -webkit-box; 
+    display: box;
+}
+#input_area li .title{
+	width: 92px;
+	text-indent: 27px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #545454;
+}
+#input_area li .content{
+	-moz-box-flex: 1; 
+    -webkit-box-flex: 1; 
+    box-flex: 1;
+}
+#input_area .content input{
+	height: 50px;
+	border: none;
+	outline: none;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #545454;
+	width: 100%;
+}
+#yz_btn{
+	width: 80px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 15px;
+	margin-top: 7px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	border-radius: 2px;
+	background-color: #dc3232;
+	color: #fff;
+}
+#yz_btn.clock{
+	width: 50px;
+	background-color: #d7d7d7;
+}
+/*按钮提示区域*/
+#btn_box{
+	margin: 0 0.425rem 0 0.425rem;
+	overflow: hidden;
+	position: relative;
+}
+#change{
+	display: block;
+	line-height: 40px;
+	width: 100%;
+	text-align: center;
+	background-color:#dc3232;
+	color: #fff;
+	border-radius:4px; 
+	font-family: "微软雅黑";
+	font-size: 18px;
+	margin-top: 50px;
+}

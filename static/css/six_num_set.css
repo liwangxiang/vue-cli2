@@ -1,0 +1,89 @@
+body{
+	background-color: #fafafa;
+}
+#header .center{
+	width: 4rem;
+	line-height: 100%;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+/*输入框区域设置*/
+#input_area{
+	overflow: hidden;
+	margin-top: 30px;
+}
+#input_area ul{
+	margin: 0 0.5rem 0 0.5rem;
+	overflow: hidden;
+}
+#input_area li{
+	float: left;
+	overflow: hidden;
+	margin-left: 0.33rem;
+}
+#input_area li:nth-child(1){
+	margin-left: 0;
+}
+#input_area li input{
+	width: 1.1rem;
+	height: 1.1rem;
+	border:1px solid #c1c1c1;
+	outline: none;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #545454;
+}
+/*按钮区域*/
+#btn_box{
+	overflow: hidden;
+}
+#btn_box .tip{
+	overflow: hidden;
+	padding-top: 16px;
+	margin-left:3%;
+	margin-right:3%;
+	display: -moz-box; 
+    display: -webkit-box; 
+    display: box;
+}
+#btn_box .tip .tip_icon{
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	background: url(../images/tip_ye_icon.png) no-repeat;
+	background-size: 100% 100%;
+    vertical-align: -32%;
+    margin-right: 5px;
+}
+#btn_box .tip .title{
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #bdbdbd;
+	-moz-box-flex: 1; 
+    -webkit-box-flex: 1; 
+    box-flex: 1;
+    display: block;
+}
+#btn_box .action_box{
+	margin: 40px 3% 0 3%;
+	height: 40px;
+}
+#auto_change,#sure{
+	width: 45%;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	border-radius: 4px;
+}
+#auto_change{
+	background-color: #ff8f16;
+	float: left;
+}
+#sure{
+	background-color: #dc3232;
+	float: right;
+}

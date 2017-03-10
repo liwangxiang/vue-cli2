@@ -1,0 +1,48 @@
+body{
+	background-color: #fafafa;
+}
+#header .center{
+	width: 4rem;
+	line-height: 100%;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+#mian_box{
+	overflow: hidden;
+}
+/*主内容样式*/
+.pri_details {
+    padding: 12px;
+}
+.pri_tit {
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: #2D2D2D;
+}
+.pri_head {
+    margin-top: 10px;
+    color: #747474;
+    overflow: hidden;
+    zoom: 1;
+}
+.pri_head dt {
+    float: left;
+}
+.pri_head dd {
+    margin-top: 5px;
+    float: left;
+}
+i.send_time {
+    display: block;
+    font-style: normal;
+    margin-top: 5px;
+}
+.pri_article {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    line-height: 25px;
+    margin-top: 12px;
+    color: #747474;
+    border: 1px solid #c1c1c1;
+}

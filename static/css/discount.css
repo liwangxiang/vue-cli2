@@ -1,0 +1,232 @@
+body{background-color: #fafafa;}
+#header .center{
+	width: 4rem;
+	line-height: 100%;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+.all_box{
+    overflow: hidden;
+}
+/*公告图区域*/
+#top_pic{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+/*title区域*/
+#title{
+	height: 40px;
+	width: 100%;
+	overflow: hidden;
+	line-height: 40px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #dc3232;
+	text-indent: 15px;
+	border-bottom: 1px solid #c1c1c1;
+	float: left;
+}
+/*列表区域*/
+#main_list{
+	padding: 0 7.5% 0 7.5%;
+	overflow: hidden;
+	background-color: #fafafa;
+	float: left;
+}
+#main_list ul{
+	overflow: hidden;
+	margin: 0 auto;
+}
+#main_list ul li{
+	
+	margin-top: 15px;
+	width: 100%;
+	height: 3.5rem;
+	background: url(../images/discount_bg.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+#main_list .top_box{
+	overflow: hidden;
+    height: 2.75rem;
+}
+#main_list .left{
+	width: 40%;
+	height: 100%
+}
+#main_list .top_box .pic{
+	width:100%;
+	height: 2.13rem;
+	margin-left: 0.3rem;
+    margin-top: 0.32rem;
+    border: 1px solid #c1c1c1;
+}
+#main_list .center{
+	width: 40%;
+	height: 100%
+}
+#main_list .center .font1{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #dc3232;
+	text-indent: 15px;
+	padding-top: 1.1rem;
+}
+#main_list .center .font2{
+	color: #dc3232;
+	font-size: 16px;
+	text-indent: 17px;
+	font-family: "微软雅黑";
+}
+#main_list .center .font1 .money{
+	font-size: 24px;
+}
+#main_list .right{
+	width: 27px;
+	height: 64px;
+    position: absolute;
+    right: 2.5%;
+    top: 50%;
+    margin-top: -34px;
+}
+#main_list .right .font{
+	font-family: "微软雅黑";
+    font-size: 14px;
+    color: #545454;
+    display: inline-block;
+    width: 16px;
+    vertical-align: -138%;
+    line-height: 16px;
+}
+#main_list .right .jian_right{
+	display: inline-block;
+	width: 8px;
+	height: 15px;
+	background: url(../images/jian_right.png) no-repeat;
+	background-size: 100% 100%;
+}
+#main_list li .bot_box{
+	height: 0.65rem;
+	width: 100%;
+	line-height: 0.65rem;
+	color: #fff;
+	font-family: "微软雅黑";
+    font-size: 14px;
+    text-indent: 15px;
+    overflow: hidden;
+}
+/*弹窗区域*/
+#dialog{
+	position: fixed;
+	z-index: 2000;
+}
+#discount{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	min-height: 100%;
+	background:rgba(0,0,0,0.4);
+    overflow-y: scroll;
+    display: none;
+}
+#discount .content{
+	position: absolute;
+	width: 94%;
+	margin-left: 3%;
+	top: 50%;
+	padding-bottom: 15px;
+	background-color: #ffffff;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+#discount .content .close{
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: url(../images/close.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+#discount .content .title{
+	width: 94%;
+	overflow: hidden;
+	font-size: 16px;
+	color: #dc3232;
+	line-height: 24px;
+	padding-top: 26px;
+	margin-left: 3%;
+	font-family: "微软雅黑";
+	border-bottom: 1px solid #c1c1c1;
+}
+#discount .content .text,
+#discount .content .li_box{
+	margin-left: 3%;
+	width: 94%;
+	overflow: hidden;
+}
+#discount .content .text h3,
+#discount .content .li_box h3{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #dc3232;
+	padding-top: 8px;
+}
+#discount .content .text h4{
+	font-family: "微软雅黑";
+	font-size: 13px;
+	color: #545454;
+	line-height: 16px;
+}
+#discount .content .li_box ul{
+	overflow: hidden;
+}
+#discount .content .li_box li{
+	overflow: hidden;
+	color: #545454;
+}
+
+#discount .content .li_box li:nth-child(odd){
+	background: #eee;
+	font-size: 14px;
+	
+}
+#discount .content .li_box li:nth-child(even){
+	background: #fff;
+}
+#discount .content .li_box li:nth-child(1){
+	background: #dc3232;
+	color: #fff;
+}
+#discount .content .li_box li>div{
+	float: left;
+	text-align: center;
+	font-family: "微软雅黑";
+	overflow: hidden;
+	border-right: 1px solid #c1c1c1;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	line-height: 30px;
+}
+#discount .content .li_box li>div:nth-child(1){
+	width: 10%;
+}
+#discount .content .li_box li>div:nth-child(2){
+	width: 30%;
+}
+#discount .content .li_box li>div:nth-child(3){
+	width: 20%;
+}
+#discount .content .li_box li>div:nth-child(4){
+	width: 20%;
+}
+#discount .content .li_box li>div:nth-child(5){
+	width: 20%;
+}

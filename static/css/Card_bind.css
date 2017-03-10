@@ -1,0 +1,191 @@
+body{
+	background-color: #fafafa;
+}
+#header .center{
+	width: 4rem;
+	line-height: 100%;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+/*<!-- ul li区域 -->*/
+#list{
+	overflow: hidden;
+}
+#list>ul{
+	overflow: hidden;
+	width: 100%;
+	border-bottom: 1px solid #c1c1c1;
+	background-color: #fff;
+}
+#list ul li{
+    border-top: 1px solid #c1c1c1;
+    height: 44px;
+    line-height: 44px;
+    text-indent:20px; 
+    position: relative;
+    font-family: "微软雅黑";
+    font-size: 14px;
+	color: #545454;
+	display: -moz-box; 
+    display: -webkit-box; 
+    display: box; 
+}
+#list ul li:nth-child(1){
+	border-top: none;
+}
+#list ul li .title{
+	font-family: "微软雅黑";
+}
+#list ul li .text{
+	-moz-box-flex: 1; 
+    -webkit-box-flex: 1; 
+    box-flex: 1;
+    text-align: right;
+    font-family: "微软雅黑";
+}
+#list .list3 li .text{
+	color: #bebebe;
+	}
+#list .list2 li .text .num{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: #fff;
+	background: #dc3232;
+	border-radius: 50%;
+	margin-left: 7px;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	font-style: normal;
+}
+#list ul li .top_right{
+	display:block;
+	width:7px;height: 14px;
+	background: url(../images/top_right.png) no-repeat;
+	background-size: 100% 100%;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+#name_val,#card_val,#card_add_val{
+	width: 100%;
+	height: 100%;
+	border: 0;
+	outline: none;
+	text-indent: 12px;
+	margin-bottom: 0;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	padding: 0;
+	height: 42px;
+    float: left;
+}
+/*按钮区域*/
+#btn_box{
+	overflow: hidden;
+}
+#btn_box .tip{
+	overflow: hidden;
+	padding-top: 16px;
+}
+#btn_box .tip .tip_icon{
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	background: url(../images/tip_ye_icon.png) no-repeat;
+	background-size: 100% 100%;
+    margin-left:3%;
+    vertical-align: -24%;
+}
+#btn_box .tip .title{
+	font-family: "微软雅黑";
+	font-size: 12px;
+	color: #bdbdbd;
+}
+#sure{
+	display: block;
+	width: 94%;
+	line-height:40px;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 16px; 
+	background-color: #dc3232;
+	border-radius: 4px;
+	margin: 50px auto;
+	color: #fff;
+}
+/*弹框区域*/
+#dialog{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+}
+      /*未绑定银行卡*/
+#card_bind_dialog{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.4);
+}
+#card_bind_dialog .content{
+	position: absolute;
+	width: 270px;
+	height: 120px;
+	top: 50%;
+	left: 50%;
+	margin-top: -60px;
+	margin-left: -135px;
+	border-radius: 4px;
+	background: #fafafa;
+}
+#card_bind_dialog .content .title{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #414141;
+	text-align: center;
+	padding-top: 40px;
+    padding-bottom: 19px;
+    height: 80px;
+}
+#card_bind_dialog .content .sure_btn{
+	width: 100%;
+	border-top: 1px solid #c1c1c1;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #dc3232;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+/*mui css*/
+.mui-poppicker{
+	background-color: #dc3232;
+}
+.mui-poppicker .mui-btn{
+	background: none;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #fff;
+	border: none;
+}
+.mui-picker{
+	background-color: #fff;
+}
+.mui-content-padded{
+	margin: 0;
+}
+.mui-btn-block{
+	height: 44px;
+	padding: 0;
+	margin-bottom: 0;
+    text-align: left;
+	text-indent: 12px;
+	border: 0;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #545454;
+}

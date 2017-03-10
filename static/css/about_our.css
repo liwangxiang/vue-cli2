@@ -1,0 +1,68 @@
+body{
+	background-color: #fafafa;
+}
+#header .center{
+	width: 4rem;
+	line-height: 100%;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+/*顶部title区域*/
+#top{
+	width: 10rem;
+	height: 38px;
+	font-size: 0.56rem;
+	color: #fff;
+	line-height: 38px;
+	font-family: "Microsoft YaHei";
+	text-align: center;
+	position: fixed;
+	top: 0;
+	background-color: #36634d;
+}
+#top .title{
+
+}
+#top .go_back{
+	width: 9px;
+	height: 15px;
+	position: absolute;
+	top: 11px;
+	left:20px;
+}
+#top .submit_btn{
+	color: #fff;
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+	position: absolute;
+	top: 5px;
+	right:20px;
+}
+/*内容区域*/
+#content{
+	margin: 0 15px 0 15px;
+}
+#content h2{
+	text-align: center;
+	color: #dc3232;
+	font-size: 16px;
+	font-family: "Microsoft YaHei";
+	line-height: 40px;
+}
+#content h2:nth-child(1){
+	margin-top: 15px;
+	line-height: 25px;
+}
+#content h3{
+	text-align: left;
+	color: #545454;
+	font-size: 16px;
+	font-family: "Microsoft YaHei";
+	line-height: 34px;
+}
+#content .box{
+	color: #808080;
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+	line-height: 22px;
+}

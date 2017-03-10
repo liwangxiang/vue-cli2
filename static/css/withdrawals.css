@@ -1,0 +1,144 @@
+body{
+	background-color: #fafafa;
+}
+#header .center{
+	width: 4rem;
+	line-height: 100%;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+/*提现方式区域*/
+#withdrawals_away{
+	margin-top: 15px;
+	width: 100%;
+	height: 60px;
+	border-top: 1px solid #c1c1c1;
+	border-bottom: 1px solid #c1c1c1;
+	background-color: #fff;
+	display: -moz-box; 
+    display: -webkit-box; 
+    display: box;
+}
+#withdrawals_away .left{
+	width: 56px;
+	height: 60px;
+}
+#withdrawals_away .center{
+	-moz-box-flex: 1; 
+    -webkit-box-flex: 1; 
+    box-flex: 1;
+}
+#withdrawals_away .right{
+	width: 27px;
+	height: 60px;
+}
+#withdrawals_away .left img{
+	width: 30px;
+	height: auto;
+	margin: 15px auto;
+	float:right;
+	margin-right: 10px;
+}
+#withdrawals_away .center .top{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	padding-top: 10px;
+}
+#withdrawals_away .center .bottom{
+	font-family: "微软雅黑";
+	font-size: 12px;
+	padding-top: 5px;
+	color: #5a5a5a;
+}
+#withdrawals_away .top_right {
+    display: block;
+    width: 7px;
+    height: 14px;
+    background: url(../images/top_right.png) no-repeat;
+    background-size: 100% 100%;
+    margin-top: 23px;
+    margin-left: 6px;
+}
+/*提现内容区域*/
+#withdrawals_con{
+	margin-top: 10px;
+	background-color: #fff;
+	border-top: 1px solid #c1c1c1;
+	border-bottom: 1px solid #c1c1c1;
+	height: 140px;
+}
+#withdrawals_con .title{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	line-height: 30px;
+	margin:0 15px 0 15px;
+}
+#withdrawals_con .content{
+	margin:0 15px 0 15px;
+	display: -moz-box; 
+    display: -webkit-box; 
+    display: box;
+    border-bottom: 1px solid #c1c1c1;
+    height: 70px;
+}
+#withdrawals_con .content .title{
+	font-size: 28px;
+	font-family: "微软雅黑";
+	color: #000;
+	margin: 0;
+	margin-right: 15px;
+	line-height: 70px;
+}
+#withdrawals_con .content .input_box{
+	-moz-box-flex: 1; 
+    -webkit-box-flex: 1; 
+    box-flex: 1;
+}
+#withdrawals_con .bottom{
+	height: 39px;
+	line-height: 39px;
+	margin: 0 15px 0 15px;
+}
+#withdrawals_con .bottom .left{
+	width: 70%;
+	float: left;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #5a5a5a;
+}
+#withdrawals_con .bottom .right{
+	width: 30%;
+	float: left;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #5a5a5a;
+	text-align: right;
+}
+#money{
+	height: 68px;
+	outline: none;
+	border: none;
+	font-size: 28px;
+	font-family: "微软雅黑";
+	color: #000;
+}
+#get_all{
+	color: #dc3232;
+	font-family: "微软雅黑";
+}
+/*按钮区域*/
+#btn_box{
+	overflow: hidden;
+}
+#sure{
+	display: block;
+	width: 92%;
+	line-height:40px;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 16px; 
+	background-color: #dc3232;
+	border-radius: 4px;
+	margin: 50px auto;
+	color: #fff;
+}

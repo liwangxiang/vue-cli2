@@ -1,0 +1,127 @@
+body{
+	background-color: #fafafa;
+}
+#header .center{
+	width: 4rem;
+	line-height: 100%;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+#mian_box{
+	overflow: hidden;
+}
+/*列表内容区域*/
+#list{
+	margin-left:20px;
+}
+#list ul{
+	width: 130%;
+}
+#list li{
+	width: 130%;
+	height: 55px;
+	overflow: hidden;
+	border-bottom: 1px solid #c1c1c1;
+	-webkit-overflow-scrolling: touch;
+	transition: all 0.25s easy-in-out;
+	-moz-transition: all 0.25s;	/* Firefox 4 */
+	-webkit-transition: all 0.25s;	/* Safari 和 Chrome */
+	-o-transition: all 0.25s;
+	-webkit-transform:translate3d(0,0,0);
+	-moz-transform:translate3d(0,0,0);
+	-ms-transform:translate3d(0,0,0);
+	-o-transform:translate3d(0,0,0);
+	transform:translate3d(0,0,0)
+}
+#list li.in{
+	-webkit-transform:translate3d(-140px,0,0);
+	-moz-transform:translate3d(-140px,0,0);
+	-ms-transform:translate3d(-140px,0,0);
+	-o-transform:translate3d(-140px,0,0);
+	transform:translate3d(-140px,0,0)
+}
+#list .left{
+	width: 8%;
+	float: left;
+	overflow: hidden;
+}
+#list .center{
+	width: 42%;
+	float: left;
+	overflow: hidden;
+}
+#list .time{
+	width: 9%;
+	float: left;
+	line-height: 50px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	overflow: hidden;
+	color: #aeaeae;
+}
+#list .right{
+	width: 140px;
+	float: left;
+	overflow: hidden;
+}
+#list .unready .email{
+	display: inline-block;
+	float: left;
+	width: 22px;
+	height: 15px;
+	background: url(../images/email_ing.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 20px 15px 20px 0;
+}
+#list .ready .email{
+	display: inline-block;
+	float: left;
+	width: 22px;
+	height: 21px;
+	background: url(../images/email_end.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 17px 15px 17px 0;
+}
+#list li .center .top{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	padding-top: 10px;
+	color: #545454;
+	display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+	float: left;
+}
+#list .unready .center .top{
+	color: #545454;
+}
+#list .ready .center .top{
+	color: #aeaeae;
+}
+#list li .center .bottom{
+	float: left;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	padding-top: 5px;
+	color: #545454;
+	display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+
+#list .right .sign{
+	width: 80px;
+	height:100%;
+	line-height: 55px;
+	text-align: center;
+	background-color: #d8d8d8;
+	color: #fff;
+	float: left;
+	font-family: "微软雅黑";
+}
+#list .right .del{
+	width: 60px;
+	height:100%;
+	line-height: 55px;
+	text-align: center;
+	background-color: #dc3232;
+	color: #fff;
+	float: left;
+	font-family: "微软雅黑";
+}

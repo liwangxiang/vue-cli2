@@ -1,0 +1,43 @@
+body{background-color: #fafafa;}
+/*<!-- 游戏列表区域 -->*/
+#game_list{
+	padding: 0 0.139rem 0 0.139rem;
+	overflow: hidden;
+	background-color: #fafafa;
+	margin-bottom: 60px;
+}
+#game_list ul{
+	overflow: hidden;
+	margin-top: 10px;
+}
+#game_list li{
+	position: relative;
+    margin-left: 0.324rem;
+    margin-top: 10px;
+    width: 2.78rem;
+    height: 2.5rem;
+    /*overflow: hidden;*/
+    float: left;
+    
+}
+#game_list li .li_bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2.78rem;
+    height: 1.85rem;
+    background: url(../images/li_bg.png) no-repeat;
+	background-size: 100% 100%;
+}
+#game_list li img{
+	width: 98%;
+	height: 1.8rem;
+	margin-left:1.5%;
+	margin-top:2%;
+}
+#game_list li .text{
+	text-align: center;
+	font-family: "微软雅黑";
+	color: #545454;
+	font-size: 12px;
+}

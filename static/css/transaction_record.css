@@ -1,0 +1,84 @@
+body{
+	background-color: #fff;
+}
+#header .center{
+	width: 4rem;
+	line-height: 100%;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+#mian_box{
+	overflow: hidden;
+}
+/*列表内容区域*/
+#list{
+	overflow: hidden;
+}
+#list li{
+	overflow: hidden;
+	border-bottom: 1px solid #c1c1c1;
+	height: 58px;
+}
+#list li:nth-child(1){
+	background-color: #fafafa;
+	line-height: 40px;
+	height: 40px;
+}
+#list li>div{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #6a6a6a;
+	text-align: center;
+	float: left;
+	overflow: hidden;
+}
+#list li>div:nth-child(1){
+	width: 20%;
+}
+#list li>div:nth-child(2){
+    width: 20%;
+}
+#list li>div:nth-child(3){
+    width: 40%
+}
+#list li>div:nth-child(4){
+    width: 20%
+}
+#list li .title1{
+	padding-top: 13px;
+	font-family: "微软雅黑";
+	font-size: 14px; 
+	color: #6a6a6a;
+}
+#list li .title2{
+	font-family: "微软雅黑";
+	font-size: 12px; 
+	color: #c7c7c7;
+}
+#list li .center{
+	line-height:58px;
+    color: #252525;
+}
+#list li .money{
+	font-family: "微软雅黑";
+	font-size: 14px; 
+	color: #252525;
+	padding-top: 10px;
+}
+#list li .order{
+	font-family: "微软雅黑";
+	font-size: 14px; 
+	color: #6a6a6a;
+}
+#list li .cancel{
+	line-height: 58px;
+	font-family: "微软雅黑";
+	font-size: 14px; 
+	color: #c7c7c7;
+}
+#list li .complete{
+	line-height: 58px;
+	font-family: "微软雅黑";
+	font-size: 14px; 
+	color: #dc3232;
+}

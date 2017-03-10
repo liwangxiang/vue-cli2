@@ -1,0 +1,113 @@
+body{
+	background-color: #fafafa;
+}
+#header .center{
+	width: 4rem;
+	line-height: 100%;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+/*<!-- ul li区域 -->*/
+#list{
+	overflow: hidden;
+}
+#list>ul{
+	overflow: hidden;
+	width: 100%;
+	border-top: 1px solid #c1c1c1;
+	border-bottom: 1px solid #c1c1c1;
+	background-color: #fff;
+	margin-top: 8px;
+}
+#list ul li{
+    border-top: 1px solid #c1c1c1;
+    height: 44px;
+    line-height: 44px;
+    margin-left:20px; 
+    margin-right: 15px;
+    position: relative;
+}
+#list ul li:nth-child(1){
+	border-top: none;
+}
+#list ul li a{
+	font-size: 14px;
+	color: #545454;
+    display: block;
+	font-family: "微软雅黑";
+	display: -moz-box; 
+    display: -webkit-box; 
+    display: box; 
+}
+#list ul li .title{
+	font-family: "微软雅黑";
+}
+#list ul li .text{
+	-moz-box-flex: 1; 
+    -webkit-box-flex: 1; 
+    box-flex: 1;
+    text-align: right;
+    font-family: "微软雅黑";
+}
+#list .list3 li .text{
+	color: #bebebe;
+	}
+#list .list2 li .text .num{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: #fff;
+	background: #dc3232;
+	border-radius: 50%;
+	margin-left: 7px;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	font-style: normal;
+}
+#list ul li .top_right{
+	display:block;
+	width:7px;height: 14px;
+	background: url(../images/top_right.png) no-repeat;
+	background-size: 100% 100%;
+    margin-top: 15px;
+    margin-left: 6px;
+}
+#username,#phone_bind,#card_bind{
+	width: 100%;
+	height: 100%;
+	border: 0;
+	outline: none;
+	text-align: right;
+	margin-bottom: 0;
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+/*mui css*/
+.mui-poppicker{
+	background-color: #dc3232;
+}
+.mui-poppicker .mui-btn{
+	background: none;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #fff;
+	border: none;
+}
+.mui-picker{
+	background-color: #fff;
+}
+.mui-content-padded{
+	margin: 0;
+}
+.mui-btn-block{
+	height: 44px;
+	padding: 0;
+	margin-bottom: 0;
+	text-align:right;
+	border: 0;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #bdbdbd;
+}

@@ -1,0 +1,88 @@
+body{
+	background-color: #fafafa;
+}
+#header .center{
+	width: 4rem;
+	line-height: 100%;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+/*<!-- ul li区域 -->*/
+#list{
+	overflow: hidden;
+}
+#list>ul{
+	overflow: hidden;
+	width: 100%;
+	border-top: 1px solid #c1c1c1;
+	border-bottom: 1px solid #c1c1c1;
+	background-color: #fff;
+	margin-top: 8px;
+}
+#list ul li{
+    border-top: 1px solid #c1c1c1;
+    height: 44px;
+    line-height: 44px;
+    margin-left:20px; 
+    margin-right: 15px;
+    position: relative;
+    font-size: 14px;
+	color: #545454;
+	font-family: "微软雅黑";
+	display: -moz-box; 
+    display: -webkit-box; 
+    display: box;
+}
+#list ul li:nth-child(1){
+	border-top: none;
+}
+#list ul li .title{
+	width: 50px;
+	display: block;
+}
+#list ul li .cont{
+	-moz-box-flex: 1; 
+    -webkit-box-flex: 1; 
+    box-flex: 1;
+    display: block;
+}
+#list ul li .top_right{
+	display:block;
+	width:7px;height: 14px;
+	background: url(../images/top_right.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	right: 8px;
+	top: 15px;
+}
+#list .list2 li{
+	height: 50px;overflow: hidden;
+} 
+#list .list2 li .title{
+	line-height: 50px;
+}
+#money{
+	height: 48px;
+	border: none;
+	outline: none;
+	width: 100%;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #545454;
+}
+/*按钮区域*/
+#btn_box{
+	overflow: hidden;
+}
+#sure{
+	display: block;
+	width: 92%;
+	line-height:40px;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 16px; 
+	background-color: #dc3232;
+	border-radius: 4px;
+	margin: 50px auto;
+	color: #fff;
+}

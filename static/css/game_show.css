@@ -1,0 +1,78 @@
+body{background-color: #fafafa;}
+#header .center{
+	width: 4rem;
+	line-height: 100%;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+/*列表区域*/
+#main_list{
+	background-color: #fafafa;
+	margin: 0 3% 0 3%;
+	overflow: hidden;
+}
+#main_list .title{
+	height: 40px;
+	width: 100%;
+	overflow: hidden;
+	line-height: 40px;
+}
+#main_list .title .font{
+	line-height: 40px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #dc3232;
+}
+#main_list .title i{
+	display: inline-block;
+}
+#main_list .title .hot{
+	width: 14px;
+	height: 16px;
+	background: url(../images/hot.png) no-repeat;
+	background-size: 100% 100%;
+	vertical-align: -6%;
+}
+#main_list .title .zhuan{
+	width: 14px;
+	height: 13px;
+	background: url(../images/zhuang.png) no-repeat;
+	background-size: 100% 100%;
+	vertical-align: -2%;
+}
+#main_list .title .gua{
+	width: 15px;
+	height: 11px;
+	background: url(../images/gua.png) no-repeat;
+	background-size: 100% 100%;
+	vertical-align: -2%;
+}
+#main_list .swiper-wrapper{
+	margin-top: 10px;
+}
+#main_list .swiper-container-horizontal>.swiper-scrollbar{
+	top:0px;
+}
+#main_list .swiper-scrollbar{
+	background-color: #e8c3bd;
+	border:1px solid #c7b3ab;
+	display: block !important;
+}
+#main_list .swiper-scrollbar-drag{
+	background-color: #ca3232;
+}
+.swiper-slide{
+	background-color: #fafafa;
+}
+.swiper-slide img{
+	float: left;
+}
+#main_list .con .font{
+	width: 100%;
+	line-height: 26px;
+	height: 26px;
+	overflow: hidden;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #545454;
+}

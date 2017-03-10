@@ -1,0 +1,57 @@
+body{background-color: #fafafa;}
+#header .center{
+	width: 4rem;
+	line-height: 100%;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+/*列表区域*/
+#main_list{
+	margin: 0 7.5% 0 7.5%;
+	overflow: hidden;
+}
+#main_list ul{
+	overflow: hidden;
+	margin: 0 auto;
+}
+#main_list ul li{
+	border: 2px solid #dbdbdb;
+	margin-top: 15px;
+	width: 47%;
+	position: relative;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+#main_list ul li:nth-child(odd){
+	float: left;
+}
+#main_list ul li:nth-child(even){
+	float: right;
+}
+#main_list li .pho{
+	width: 100%;
+	height: 4.77rem;
+	float: left;
+}
+#main_list li .font{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	background: rgba(177,177,177,0.6);
+	text-align: center;
+	color: #fff;
+	float: left;
+	position: absolute;
+	bottom: 0;
+}
+#main_list ul li:hover{
+	border: 2px solid #dc3232;
+}
+#main_list ul li:hover .font{
+	background: rgba(220,50,50,0.83);
+	height: 28px;
+	line-height: 28px;
+}

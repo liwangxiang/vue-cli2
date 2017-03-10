@@ -1,0 +1,112 @@
+body{background-color: #fafafa;}
+#header .center{
+	width: 4rem;
+	line-height: 100%;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+/*列表区域*/
+#main_list{
+	margin: 0 7.5% 0 7.5%;
+	overflow: hidden;
+}
+#main_list ul{
+	overflow: hidden;
+	margin: 0 auto;
+}
+#main_list ul li{
+	border: 1px solid #dc3232;
+	margin-top: 15px;
+	width: 47%;
+	position: relative;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+#main_list ul li:nth-child(odd){
+	float: left;
+}
+#main_list ul li:nth-child(even){
+	float: right;
+}
+#main_list li .pho{
+	width: 100%;
+	height: 3.09rem;
+	float: left;
+}
+#main_list li .font{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	width: 100%;
+	height: 40px;
+	background: rgba(0,0,0,0.4);
+	text-align: center;
+	color: #fff;
+	float: left;
+	position: absolute;
+	bottom: 0;
+}
+#main_list li .font .left{
+	height: 40px;
+	width: 50%;
+	text-align: center;
+	font-family: "微软雅黑";
+}
+#main_list li .font .left .font1{
+	font-family: "微软雅黑";
+	padding-top: 5px;
+	display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+#main_list li .font .left .font2{
+	font-family: "微软雅黑";
+    font-size: 12px;
+}
+#main_list li .font .right{
+	width: 50%;
+}
+#main_list li .font .right:before{
+	content: "";
+    overflow: hidden;
+    bottom: 14px;
+    right: 58px;
+    width: 14px;
+    height: 14px;
+    background-color: #dc3232;
+    position: absolute;
+    bottom: 11px;
+    right: 38px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+#main_list li .font .right .play_box{
+	display: block;
+    text-align: center;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    width: 28px;
+    height: 28px;
+    line-height: 30px;
+    background-color: #dc3232;
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+#main_list li .font .play{
+	display: block;
+    color: #fff;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    margin-top: -2px;
+    margin-left: -4px;
+}

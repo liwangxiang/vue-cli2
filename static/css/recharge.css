@@ -1,0 +1,180 @@
+body{background-color: #fafafa;}
+#header .center{
+	width: 4rem;
+	line-height: 100%;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+/*充值金额区域*/
+#pay_money{
+	width: 10rem;
+	overflow: hidden;
+	background-color: #fafafa;
+	margin-top: 13px;
+}
+#pay_money .pay_con{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	display: -moz-box; 
+    display: -webkit-box; 
+    display: box;
+    background-color: #fff;
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+#pay_money .pay_btn{
+	width: 334px;
+    line-height: 22px;
+    margin-top: 10px;
+    margin: 10px auto 0;
+}
+#pay_money .pay_con .title{
+	color: #5a5a5a;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	width: 76px;
+	text-align: center;
+}
+#pay_money .pay_con .content{
+	-moz-box-flex: 1; 
+    -webkit-box-flex: 1; 
+    box-flex: 1;
+}
+#pay_num{
+	border: 0px;
+	width: 95%;
+	height: 50px;
+	color: #2f2f2f;
+	background:none;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	text-indent: 10px;
+	outline: none;
+	border-radius: 5px;
+}
+#pay_money .pay_btn>span{
+	display: inline-block;
+	width: 70px;
+	line-height: 40px;
+	text-align: center;
+	overflow: hidden;
+	border: #e2e2e2 solid 1px;
+	background-color: #f4f4f4;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	border-radius: 4px;
+	margin-left: 0.26rem;
+	color: #bebebe;
+}
+#pay_money .pay_btn .active{
+	background-color: #dc3232;
+	color: #fff;
+	border:none;
+}
+#pay_money .pay_title{
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #5a5a5a;
+	line-height: 34px;
+	margin-left: 23px;
+}
+.h_32{
+	width: 10rem;
+	height: 32px;
+	border-bottom: 1px solid #e2e2e2;
+	border-top: 1px solid #e2e2e2;
+}
+/*充值方式区域*/
+#pay_away{
+	overflow: hidden;
+	background-color: #fff;
+}
+#pay_away .weixin,
+#pay_away .alipay,
+#pay_away .bank_card{
+	width: 10rem;
+	height: 60px;
+	border-bottom: 1px solid #e2e2e2;
+	display: -moz-box; 
+    display: -webkit-box; 
+    display: box;
+}
+#pay_away .weixin{
+    border-top: 1px solid #e2e2e2;
+}
+#pay_away .away_logo{
+	width: 76px;
+	height: 100%;
+}
+#pay_away .content{
+    -moz-box-flex: 1; 
+    -webkit-box-flex: 1; 
+    box-flex: 1;
+}
+#pay_away .right{
+	width: 63px;
+	height: 100%;
+}
+#pay_away .away_logo .weixin_logo{
+	display: block;
+	width: 38px;
+	height: 38px;
+	margin: 11px 23px;
+	background: url(../images/weixin_pay.png) no-repeat;
+    background-size: 100% 100%;
+}
+#pay_away .away_logo .alipay_logo{
+	display: block;
+	width: 38px;
+	height: 38px;
+	margin: 15px 23px;
+	background: url(../images/alipay_pay.png) no-repeat;
+    background-size: 100% 100%;
+}
+#pay_away .away_logo .bank_card_logo{
+	display: block;
+	width: 38px;
+	height: 38px;
+	margin: 19px 23px;
+	background: url(../images/card_pay.png) no-repeat;
+    background-size: 100% 100%;
+}
+#pay_away .content .pay_name{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	line-height: 60px;
+}
+#pay_away .right .select{
+	width: 27px;
+	height: 27px;
+	display: block;
+	margin-top: 16px;
+}
+#pay_away .right .ok{
+    background: url(../images/select_ok2.png) no-repeat;
+    background-size: 100% 100%;
+}
+#pay_away .right .no{
+	background: url(../images/select_no.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/*按钮区域*/
+#btn_area{
+	overflow: hidden;
+	width: 10rem;
+}
+#next_step{
+	display: block;
+	width: 9rem;
+	height: 40px;
+	line-height: 40px;
+	font-family: "微软雅黑";
+	color: #fff;
+	background: #dc3232;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 18px;
+	margin:40px auto 4px;
+}
