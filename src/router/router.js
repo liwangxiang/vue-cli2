@@ -13,25 +13,30 @@ const withdrawals = r => require.ensure([], () => r(require('../pages/user/withd
 
 
 
-export default new VueRouter({
-	mode: 'history',
-	scrollBehavior (to, from, savedPosition) {
-  if (savedPosition) {
-    return savedPosition
-  } else {
-    return { x: 0, y: 0 }
-  }
-},
+const router = new VueRouter({
+	history: true,
+  saveScrollPosition: true,
+// 	scrollBehavior (to, from, savedPosition) {
+//   if (savedPosition) {
+//     return savedPosition
+//   } else {
+//     return { x: 0, y: 0 }
+//   }
+// },
 	routes:[
 	    //地址为空时跳转home页面
-	    {
-	    	path:"",
-	    	redirect:'/home'
-	    },
+	    // {
+	    // 	path:"",
+	    // 	redirect:'/home'
+	    // },
 	    //首页
 		{
 	    	path:"/home",
-	    	component: home
+	    	component: home,
+	    	// beforeEnter: (to, from, next) => {
+		    //    console.log("S");
+		    //    next();
+		    //   }
 	    },
 	    //登入页
 	    {
@@ -70,3 +75,11 @@ export default new VueRouter({
 	    }
 	]
 });
+// router.beforeEach((to, from, next) => {
+//   console.log("S");
+//   next();
+// });
+// router.afterEach(route => {
+  
+// });
+export default  router;

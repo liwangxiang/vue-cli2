@@ -24,7 +24,7 @@
 	                <span class="user_name">我是谁</span>
 	            </div>
 	            <div class="right">
-	                <span class="money_num">￥9235.00</span>
+	                <span class="money_num">￥{{money}}</span>
 	                <i class="money_icon"></i>
 	            </div>
 	        </div>
@@ -128,21 +128,34 @@
     </div>
 </template>
 <script>
-
+        
         import SwiperJs from '../../static/js/swiper.min.js'
 	    import left_nav from '../components/left_nav'
 	    import footer_nav from '../components/footer_nav'
 
 		export default{
+			data (){
+				return {
+					money:"12121212"
+				}
+			},
 		    components:{
 		        left_nav,
 		        footer_nav
 		    },
-		    beforeRouteEnter (to, from, next) {
-			   console.log("beforeRouterEenter") ;
-			   next();
-			  },
+		 //    beforeRouteEnter (to, from, next) {
+			   
+			//    next();
+			// },
+			created () {
+
+	           this.getdata()
+	        },
+	        watch:{
+            '$route': 'getdata'
+        },
 		    mounted:function(){
+		    	
                 $(".swiper-container").css({"width":$(window).width()})
 				var swiper = new Swiper('.swiper-container', {
 						        pagination: '.swiper-pagination',
@@ -153,10 +166,17 @@
 						    });
 		    },
 		    methods:{
-		        al:function(){
-	                alert("s")
-	            }
-		    }
+		    	getdata:function(){
+		    		this.money = "222222222";
+		             this.$nextTick(function () {
+		                // $(window).off("scroll")
+		                // alert("home")
+		              })
+		    	}
+		    },
+	        destroyed(){
+	           // $(window).scrollTop(0)
+	        }
 		}
 
 </script>

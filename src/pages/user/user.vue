@@ -30,7 +30,7 @@
             <!-- 账户余额区域 -->
             <div id="yu_e">
                 <p class="title">&nbsp;资金账户（元）</p>
-                <p class="money">63325.00</p>
+                <p class="money">{{money}}</p>
                 <img src="../../../static/images/user_bg.png" class="bottom_bg" />
             </div>
             <!-- ul li区域 -->
@@ -77,18 +77,38 @@
         data(){
             return{
                 footer_flag:'',
-                num:""
+                num:"",
+                
             }
         },
+        created () {
+             this.getdata();
+        },
+        watch:{
+            '$route': 'getdata'
+        },
+      //   beforeRouteEnter (to, from, next) {
+           
+      //      next();
+      //     //  alert("S")
+      //     // console.log(this)  
+      // },
         components:{
             left_nav,
             footer_nav
+        },
+        mounted:function(){
+
         },
         methods:{
             ...mapMutations([
                // this.$store.commit('add');
                'add'
-            ])
+            ]),
+            getdata:function(){
+                this.money = '222222222221'
+
+            }
         }
     }
 </script>

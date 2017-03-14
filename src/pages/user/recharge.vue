@@ -13,7 +13,7 @@
                 </div>
                 <div class="center">充值</div>
                 <div class="right_btn">
-                    <a href="javascript:history.go(-1)" id="back"><i class="go"></i>返回</a>
+                    <router-link to="/user" id="back"><i class="go"></i>返回</router-link>
                 </div>
             </div>
             <!-- 充值金额区域 -->

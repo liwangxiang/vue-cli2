@@ -5,7 +5,6 @@ import Vue from 'vue'
 import router from './router/router.js'
 import store from './store/store.js'
 
-
 // import home from './pages/home'
 // import detail from './pages/detail'
 
@@ -45,6 +44,7 @@ new Vue({
 	  		}else{
 	  			store.footer_flag = '首页'
 	  		}
+	  		$(window).scrollTop(0);
 	  	}
 	  	// '$route' (to, from){
 	  	// 	const toDepth = to.path.substring(0, to.path.length-2).split('/').length
