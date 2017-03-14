@@ -3,7 +3,7 @@ import Vuex from 'Vuex'
 Vue.use(Vuex)
 
 const state = {
-	footer_flag : '首页',
+	footer_flag : '首页', //底部导航栏标识
 	num:0
 }
 const mutations = {

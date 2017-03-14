@@ -65,6 +65,8 @@
             </div>
             <!-- 底部导航栏区域 -->
             <footer_nav></footer_nav>
+            <!-- 弹窗区域 -->
+            <tip_dialog v-if="show_dialog" v-on:closetip="show_dialog = false"></tip_dialog>
         </div>
     </div>
 </template>
@@ -72,13 +74,15 @@
     import {mapMutations} from 'vuex'
     import left_nav from '../../components/left_nav'
     import footer_nav from '../../components/footer_nav'
+    import tip_dialog from '../../components/tip_dialog'
 
     export default{
         data(){
             return{
-                footer_flag:'',
+                footer_flag:'',   //底部导航栏标识
                 num:"",
-                
+                show_dialog:false, //是否展示弹窗
+                style_dialog:"ok", //展示哪种弹窗
             }
         },
         created () {
@@ -95,7 +99,8 @@
       // },
         components:{
             left_nav,
-            footer_nav
+            footer_nav,
+            tip_dialog
         },
         mounted:function(){
 
@@ -108,6 +113,9 @@
             getdata:function(){
                 this.money = '222222222221'
 
+            },
+            closetip:function(){alert("S")
+                this.show_dialog = false;
             }
         }
     }
