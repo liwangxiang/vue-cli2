@@ -69,6 +69,7 @@
     </div>
 </template>
 <script>
+    import {mapMutations} from 'vuex'
     import left_nav from '../../components/left_nav'
     import footer_nav from '../../components/footer_nav'
 
@@ -84,13 +85,16 @@
             footer_nav
         },
         methods:{
-            add:function(){
+            ...mapMutations([
                // this.$store.commit('add');
-                console.log(this.$store)
-            }
+               'add'
+            ])
         }
     }
 </script>
 <style scoped>
     @import "../../../static/css/user.css" ;
+    .all_box{
+        background: #fafafa;
+    }
 </style>

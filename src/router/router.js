@@ -14,10 +14,14 @@ const withdrawals = r => require.ensure([], () => r(require('../pages/user/withd
 
 
 export default new VueRouter({
-	hash:'false',
+	mode: 'history',
 	scrollBehavior (to, from, savedPosition) {
-	  return { x: 0, y: 0 }
-	},
+  if (savedPosition) {
+    return savedPosition
+  } else {
+    return { x: 0, y: 0 }
+  }
+},
 	routes:[
 	    //地址为空时跳转home页面
 	    {
