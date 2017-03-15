@@ -20,7 +20,7 @@
                     <span class="user_name">我是谁</span>
                 </div>
                 <div class="right">
-                    <a href="email.html">
+                    <a href="email.html" v-on:click="alertTip">
                         <span class="money_num">站内信</span>
                         <span class="email_num">21</span>
                         <i class="email_icon"></i>
@@ -66,7 +66,10 @@
             <!-- 底部导航栏区域 -->
             <footer_nav></footer_nav>
             <!-- 弹窗区域 -->
-            <tip_dialog v-if="show_dialog" v-on:closetip="show_dialog = false"></tip_dialog>
+            <tip_dialog 
+                v-if="show_dialog" 
+                v-on:closetip="show_dialog = false"
+                v-bind:style_dialog = "style_dialog"></tip_dialog>
         </div>
     </div>
 </template>
@@ -82,7 +85,7 @@
                 footer_flag:'',   //底部导航栏标识
                 num:"",
                 show_dialog:false, //是否展示弹窗
-                style_dialog:"ok", //展示哪种弹窗
+                style_dialog:"success", //展示哪种弹窗
             }
         },
         created () {
@@ -114,8 +117,9 @@
                 this.money = '222222222221'
 
             },
-            closetip:function(){alert("S")
-                this.show_dialog = false;
+            alertTip:function(event){
+                this.show_dialog = true;
+                event.preventDefault();
             }
         }
     }

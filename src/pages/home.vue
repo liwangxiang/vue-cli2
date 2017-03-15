@@ -129,7 +129,7 @@
 </template>
 <script>
         
-        import SwiperJs from '../../static/js/swiper.min.js'
+        import '../../static/js/swiper.min.js'
 	    import left_nav from '../components/left_nav'
 	    import footer_nav from '../components/footer_nav'
 

@@ -1,13 +1,22 @@
 <template>
-	<div class="ok">
-		<div class="content">
-			<div v-on:click="close" class="close">x</div>
-            <div>我是一个内容</div>
-		</div>
-	</div>
+	<div>
+        <div class="ok" v-if="style_dialog == 'success'">
+            <div class="content">
+                <div v-on:click="close" class="close">x</div>
+                <div>成功啦，你真帅！</div>
+            </div>
+        </div>
+        <div class="ok" v-if="style_dialog == 'error'">
+            <div class="content">
+                <div v-on:click="close" class="close">x</div>
+                <div>报错了，怎么办，快跑路吧！</div>
+            </div>
+        </div>   
+    </div>
 </template>
 <script>
 	export default{
+        props:['style_dialog'],
 		methods:{
 			close:function(){
 				this.$emit('closetip')
