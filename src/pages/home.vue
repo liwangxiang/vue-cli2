@@ -1,5 +1,6 @@
 <template>
     <div>
+    	<page_loading v-if="loading_show"></page_loading>
         <!-- 侧边导航 -->
         <left_nav></left_nav>
 	    <div id="mask"></div>
@@ -132,31 +133,33 @@
         import '../../static/js/swiper.min.js'
 	    import left_nav from '../components/left_nav'
 	    import footer_nav from '../components/footer_nav'
-
+	    import page_loading from '../components/page_loading'
+	    import {cs} from '../service/getData'
+        
+        cs('1')
 		export default{
 			data (){
 				return {
+					loading_show:"",
 					money:"12121212"
 				}
 			},
 		    components:{
 		        left_nav,
-		        footer_nav
+		        footer_nav,
+		        page_loading
 		    },
-		 //    beforeRouteEnter (to, from, next) {
-			   
-			//    next();
-			// },
-			created () {
-
-	           this.getdata()
+		    beforeRouteEnter (to, from, next) {
+			   // this.getdata()
+			   next();
+			},
+			beforeRouteLeave (to, from, next) {
+				//离开页面是显示loading条
+	            this.loading_show = true;
+	            next();
 	        },
-	        watch:{
-            '$route': 'getdata'
-        },
 		    mounted:function(){
-		    	
-                $(".swiper-container").css({"width":$(window).width()})
+		    	this.loading_show = false;
 				var swiper = new Swiper('.swiper-container', {
 						        pagination: '.swiper-pagination',
 						        paginationClickable: true,
@@ -173,10 +176,7 @@
 		                // alert("home")
 		              })
 		    	}
-		    },
-	        destroyed(){
-	           // $(window).scrollTop(0)
-	        }
+		    }
 		}
 
 </script>
@@ -229,4 +229,5 @@
 		color: #545454;
 		font-size: 12px;
 	}
+	#lunbo_box{width: 10rem;}
 </style>

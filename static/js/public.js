@@ -1,10 +1,13 @@
 ;(function(){
     // 设置fontsize
-	if($(window).width()>=550){
-		$("html").css({"font-size":550/10});
-	}else{
-		$("html").css({"font-size":$(window).width()/10});
-	}
+	$(window).on("resize",function resize(){
+		if($(window).width()>=550){
+			$("html").css({"font-size":550/10});
+		}else{
+			$("html").css({"font-size":$(window).width()/10});
+		}
+	})
+	$(window).trigger('resize');
 })()
 $(function(){
 	// <!-- 公告区域 -->

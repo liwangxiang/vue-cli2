@@ -1,5 +1,6 @@
 <template>
     <div>
+        <page_loading v-if="loading_show"></page_loading>
         <!-- 侧边导航 -->
         <left_nav></left_nav>
         <div id="mask"></div>
@@ -20,7 +21,7 @@
                     <span class="user_name">我是谁</span>
                 </div>
                 <div class="right">
-                    <a href="email.html" v-on:click="alertTip">
+                    <a href="email.html" v-on:click.prevent="alertTip">
                         <span class="money_num">站内信</span>
                         <span class="email_num">21</span>
                         <i class="email_icon"></i>
@@ -78,35 +79,36 @@
     import left_nav from '../../components/left_nav'
     import footer_nav from '../../components/footer_nav'
     import tip_dialog from '../../components/tip_dialog'
+    import page_loading from '../../components/page_loading'
 
     export default{
         data(){
             return{
                 footer_flag:'',   //底部导航栏标识
+                loading_show:'',
                 num:"",
+                money:2368,
                 show_dialog:false, //是否展示弹窗
                 style_dialog:"success", //展示哪种弹窗
             }
         },
-        created () {
-             this.getdata();
+        beforeRouteEnter (to, from, next) {
+             //ajax
+             next();
         },
-        watch:{
-            '$route': 'getdata'
+        beforeRouteLeave (to, from, next) {
+            //离开页面-->显示loading条
+            this.loading_show = true;
+            next();
         },
-      //   beforeRouteEnter (to, from, next) {
-           
-      //      next();
-      //     //  alert("S")
-      //     // console.log(this)  
-      // },
         components:{
             left_nav,
             footer_nav,
-            tip_dialog
+            tip_dialog,
+            page_loading
         },
         mounted:function(){
-
+            this.loading_show = false;   //加载完成-->隐藏loading条
         },
         methods:{
             ...mapMutations([
@@ -119,7 +121,7 @@
             },
             alertTip:function(event){
                 this.show_dialog = true;
-                event.preventDefault();
+                // event.preventDefault();
             }
         }
     }
