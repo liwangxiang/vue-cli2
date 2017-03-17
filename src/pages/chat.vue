@@ -22,7 +22,7 @@
                     <ul>
                         <li>
                             <div class="left fl">
-                                <div class="pho_box"><img class="user_pho" src="../../static/images/official.png" />
+                                <div class="pho_box"><img class="user_ph/images/official.png" />
                                 </div>
                                 <!-- <div class="nick_name">客服名称</div> -->
                             </div>
@@ -33,7 +33,7 @@
                         <li>
                             <div class="left fr">
                                 <div class="pho_box">
-                                    <img class="user_pho" src="../../static/images/official.png" />
+                                    <img class="user_ph/images/official.png" />
                                 </div>
                             </div>
                             <div class="right fr my">
@@ -155,7 +155,7 @@
     position: absolute;
     left: -6px;
     top: 10px;
-    background: url(../../static/images/liao_left.png) no-repeat;
+    background: url(../images/liao_left.png) no-repeat;
     background-size: 100% 100%;
 }
 #user_info li .my:before{
@@ -165,7 +165,7 @@
     position: absolute;
     right: -6px;
     top: 10px;
-    background: url(../../static/images/liao_right.png) no-repeat;
+    background: url(../images/liao_right.png) no-repeat;
     background-size: 100% 100%;
 }
 #user_info .left .pho_box{

@@ -12,7 +12,7 @@
 	                <span></span>
 	                <span></span>
 	            </div>
-	            <img src="../../static/images/index_logo.png" class="center" />
+	            <img src="../images/index_logo.png" class="center" />
 	            <div class="right_btn">
 	                <a href="login.html" id="loggin">登录</a>
 	                <a href="reg.html" id="reg">注册</a>
@@ -33,10 +33,10 @@
 	        <div id="lunbo_box">
 	            <div class="swiper-container">
 	                <div class="swiper-wrapper">
-	                    <div class="swiper-slide"><img src="../../static/images/banner1.png"></div>
-	                    <div class="swiper-slide"><img src="../../static/images/banner2.png"></div>
-	                    <div class="swiper-slide"><img src="../../static/images/banner3.png"></div>
-	                    <div class="swiper-slide"><img src="../../static/images/banner4.png"></div>
+	                    <div class="swiper-slide"><img src="../images/banner1.png"></div>
+	                    <div class="swiper-slide"><img src="../images/banner2.png"></div>
+	                    <div class="swiper-slide"><img src="../images/banner3.png"></div>
+	                    <div class="swiper-slide"><img src="../images/banner4.png"></div>
 	                </div>
 	                <!-- Add Pagination -->
 	                <div class="swiper-pagination"></div>
@@ -44,7 +44,7 @@
 	        </div>
 	        <!-- 公告区域 -->
 	        <div id="gongao">
-	            <img src="../../static/images/gongao_icon.png" class="gongao_icon" />
+	            <img src="../images/gongao_icon.png" class="gongao_icon" />
 	            <div id="demo">
 	                <div class="ad" onclick="window.location.href='/message/index'">
 	                    <span class="ad_board">公告</span>&nbsp;
@@ -60,63 +60,63 @@
 	            <ul>
 	                <li>
 	                    <a href="game.html">
-	                        <img src="../../static/images/li_1.png" />
+	                        <img src="../images/li_1.png" />
 	                        <div class="li_bg"></div>
 	                        <div class="text">电子游艺</div>
 	                    </a>
 	                </li>
 	                <li>
 	                    <a href="entertainment.html">
-	                        <img src="../../static/images/li_2.png" />
+	                        <img src="../images/li_2.png" />
 	                        <div class="li_bg"></div>
 	                        <div class="text">真人娱乐</div>
 	                    </a>
 	                </li>
 	                <li>
 	                    <a href="sport_match.html">
-	                        <img src="../../static/images/li_3.png" />
+	                        <img src="../images/li_3.png" />
 	                        <div class="li_bg"></div>
 	                        <div class="text">体育赛事</div>
 	                    </a>
 	                </li>
 	                <li>
 	                    <a href="lottery_game.html">
-	                        <img src="../../static/images/li_4.png" />
+	                        <img src="../images/li_4.png" />
 	                        <div class="li_bg"></div>
 	                        <div class="text">彩票游戏</div>
 	                    </a>
 	                </li>
 	                <li>
 	                    <a href="#">
-	                        <img src="../../static/images/li_5.png" />
+	                        <img src="../images/li_5.png" />
 	                        <div class="li_bg"></div>
 	                        <div class="text">MG老虎机</div>
 	                    </a>
 	                </li>
 	                <li>
 	                    <a href="#">
-	                        <img src="../../static/images/li_6.png" />
+	                        <img src="../images/li_6.png" />
 	                        <div class="li_bg"></div>
 	                        <div class="text">捕鱼天下</div>
 	                    </a>
 	                </li>
 	                <li>
 	                    <a href="#">
-	                        <img src="../../static/images/li_7.png" />
+	                        <img src="../images/li_7.png" />
 	                        <div class="li_bg"></div>
 	                        <div class="text">德州扑克</div>
 	                    </a>
 	                </li>
 	                <li>
 	                    <a href="#">
-	                        <img src="../../static/images/li_8.png" />
+	                        <img src="../images/li_8.png" />
 	                        <div class="li_bg"></div>
 	                        <div class="text">PT老虎机</div>
 	                    </a>
 	                </li>
 	                <li>
 	                    <a href="discount.html">
-	                        <img src="../../static/images/li_9.png" />
+	                        <img src="../images/li_9.png" />
 	                        <div class="li_bg"></div>
 	                        <div class="text">优惠中心</div>
 	                    </a>
@@ -134,9 +134,9 @@
 	    import left_nav from '../components/left_nav'
 	    import footer_nav from '../components/footer_nav'
 	    import page_loading from '../components/page_loading'
-	    import {cs} from '../service/getData'
+	    // import {cs} from '../service/getData'
         
-        cs('1')
+        // cs('1')
 		export default{
 			data (){
 				return {
@@ -181,7 +181,7 @@
 
 </script>
 <style scoped>
-    @import '../../static/css/swiper.min.css';
+    @import '../css/swiper.min.css';
     body{background-color: #fafafa;}
     #user_info{
        overflow:hidden;
@@ -214,7 +214,7 @@
 		left: 0;
 		width: 2.78rem;
 	    height: 1.85rem;
-	    background: url(../../static/images/li_bg.png) no-repeat;
+	    background: url(../images/li_bg.png) no-repeat;
 		background-size: 100% 100%;
 	}
 	#game_list li img{

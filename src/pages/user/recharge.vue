@@ -111,6 +111,6 @@
     // })()
 </script>
 <style scoped>
-    @import "../../../static/css/recharge.css";
+    @import "../../css/recharge.css";
 </style>
 

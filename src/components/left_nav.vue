@@ -18,9 +18,9 @@
     </div>
 </template>
 <script>
-	;(function(){
+	export default{
         
-    })()
+    }
 </script>
 <style scoped>
 

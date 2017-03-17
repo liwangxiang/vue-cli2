@@ -19,7 +19,7 @@
             <!-- 提现方式区域 -->
             <div id="withdrawals_away">
                 <div class="left">
-                    <img src="../../../static/images/bank1.png" />
+                    <img src="../../images/bank1.png" />
                 </div>
                 <div class="center">
                     <div class="top">中国银行</div>
@@ -79,5 +79,5 @@
     // })
 </script>
 <style scoped>
-    @import "../../../static/css/withdrawals.css";
+    @import "../../css/withdrawals.css";
 </style>

@@ -10,7 +10,8 @@ const chat = r => require.ensure([], () => r(require('../pages/chat')), 'chat')
 const user = r => require.ensure([], () => r(require('../pages/user/user')), 'user')
 const recharge = r => require.ensure([], () => r(require('../pages/user/recharge')), 'recharge')
 const withdrawals = r => require.ensure([], () => r(require('../pages/user/withdrawals')), 'withdrawals')
-
+// import app from '../app'
+// import home from '../pages/home'
 
 
 const router = new VueRouter({
@@ -79,4 +80,4 @@ const router = new VueRouter({
 // router.afterEach(route => {
 //   // this.$store.commit('page_loading_end');
 // });
-export default  router;
+export default router;

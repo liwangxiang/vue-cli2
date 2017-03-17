@@ -4,36 +4,12 @@
 	</div>
 </template>
 <script>
-	export default{
-  //   data(){
-  //     return {
-  //       page_loading_flag:"",
-  //     }
-  //   },
-  //   created:function(){
-  //         // this.$store.dispatch('page_loading_start');
-  //         this.page_loading_flag = this.$store.state.page_loading_flag;
-  //         console.log(this.page_loading_flag)
-  //   },
-		// components:{
-			
-		// },
-    // beforeRouteLeave (to, from, next) {alert("this.page_loading_flag)")
-    //          this.$store.dispatch('page_loading_start');
-    //          this.page_loading_flag = this.$store.state.page_loading_flag;
 
-    //         // next();
-    //         //  alert("S")
-    //         // console.log(this)  
-    // }
+	export default{
+  
 	}
 </script>
 <style scoped>
-    * { margin: 0; padding: 0; }
-      html,body { background: #eee; }
-      ul,li { list-style: none; }
-      a { text-decoration: none; }
-      img { vertical-align: middle; }
       /* 跳转页面动画 */
       .slide-enter,
       .slide_back-enter {

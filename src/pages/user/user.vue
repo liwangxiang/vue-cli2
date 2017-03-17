@@ -32,7 +32,7 @@
             <div id="yu_e">
                 <p class="title">&nbsp;资金账户（元）</p>
                 <p class="money">{{money}}</p>
-                <img src="../../../static/images/user_bg.png" class="bottom_bg" />
+                <img src="../../images/user_bg.png" class="bottom_bg" />
             </div>
             <!-- ul li区域 -->
             <div id="list">
@@ -127,7 +127,7 @@
     }
 </script>
 <style scoped>
-    @import "../../../static/css/user.css" ;
+    @import "../../css/user.css" ;
     .all_box{
         background: #fafafa;
     }
