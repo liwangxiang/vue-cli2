@@ -19,7 +19,7 @@ body{
 	display: inline-block;
 	width: 25px;
 	height: 17px;
-	background: url(../images/email_icon.png) no-repeat;
+	background: url(../../static/images/email_icon.png) no-repeat;
 	background-size: 100% 100%;
 	float: right;
 	margin-top: 16px;
@@ -103,7 +103,7 @@ body{
 #list ul li .top_right{
 	display:block;
 	width:7px;height: 14px;
-	background: url(../images/top_right.png) no-repeat;
+	background: url(../../static/images/top_right.png) no-repeat;
 	background-size: 100% 100%;
 	position: absolute;
 	right: 8px;
@@ -112,7 +112,7 @@ body{
 #list li .recharge_icon{
 	display: inline-block;
 	width: 15px;height: 15px;
-	background: url(../images/recharge_icon.png) no-repeat;
+	background: url(../../static/images/recharge_icon.png) no-repeat;
 	background-size: 100% 100%;
 	margin-right:5px;
     vertical-align: -2%;
@@ -120,7 +120,7 @@ body{
 #list li .getMoney_icon{
 	display: inline-block;
 	width: 15px;height: 14px;
-	background: url(../images/getMoney_icon.png) no-repeat;
+	background: url(../../static/images/getMoney_icon.png) no-repeat;
 	background-size: 100% 100%;
 	margin-right:5px;
 	vertical-align: -2%;
@@ -128,14 +128,14 @@ body{
 #list li .zz_icon{
 	display: inline-block;
 	width: 15px;height: 15px;
-	background: url(../images/zz_icon.png) no-repeat;
+	background: url(../../static/images/zz_icon.png) no-repeat;
 	background-size: 100% 100%;
 	margin-right:5px;
 }
 #list li .tz_icon{
 	display: inline-block;
 	width: 12px;height: 15px;
-	background: url(../images/tz_icon.png) no-repeat;
+	background: url(../../static/images/tz_icon.png) no-repeat;
 	background-size: 100% 100%;
 	margin-right:5px;
     vertical-align: -2%;
@@ -143,7 +143,7 @@ body{
 #list li .zzJ_icon{
 	display: inline-block;
 	width: 14px;height: 15px;
-	background: url(../images/zzJ_icon.png) no-repeat;
+	background: url(../../static/images/zzJ_icon.png) no-repeat;
 	background-size: 100% 100%;
 	margin-right:5px;
     vertical-align: -4%;
@@ -151,7 +151,7 @@ body{
 #list li .jyJ_icon{
 	display: inline-block;
 	width: 12px;height: 15px;
-	background: url(../images/jyJ_icon.png) no-repeat;
+	background: url(../../static/images/jyJ_icon.png) no-repeat;
 	background-size: 100% 100%;
 	margin-right:5px;
     vertical-align: -6%;
@@ -159,7 +159,7 @@ body{
 #list li .zh_set_icon{
 	display: inline-block;
 	width: 16px;height: 14px;
-	background: url(../images/zh_set_icon.png) no-repeat;
+	background: url(../../static/images/zh_set_icon.png) no-repeat;
 	background-size: 100% 100%;
 	margin-right:5px;
     vertical-align: -2%;
@@ -167,7 +167,7 @@ body{
 #list li .safe_set_icon{
 	display: inline-block;
 	width: 14px;height: 15px;
-	background: url(../images/safe_set_icon.png) no-repeat;
+	background: url(../../static/images/safe_set_icon.png) no-repeat;
 	background-size: 100% 100%;
 	margin-right:5px;
     vertical-align: -6%;
@@ -175,7 +175,7 @@ body{
 #list li .out_icon{
 	display: inline-block;
 	width: 15px;height: 15px;
-	background: url(../images/out_icon.png) no-repeat;
+	background: url(../../static/images/out_icon.png) no-repeat;
 	background-size: 100% 100%;
 	margin-right:5px;
     vertical-align: -2%;

@@ -32,7 +32,7 @@
             <div id="yu_e">
                 <p class="title">&nbsp;资金账户（元）</p>
                 <p class="money">{{money}}</p>
-                <img src="../../images/user_bg.png" class="bottom_bg" />
+                <img src="../../../static/images/user_bg.png" class="bottom_bg" />
             </div>
             <!-- ul li区域 -->
             <div id="list">

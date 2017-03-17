@@ -1,6 +1,6 @@
 <template>
         <div>
-            <img src="../images/login_bg.png" class="logo_bg">
+            <img src="../../static/images/login_bg.png" class="logo_bg">
 	        <!-- 侧边导航 -->
 	        <left_nav></left_nav>
 	        <div id="mask"></div>
@@ -15,7 +15,7 @@
 	               <div class="center">登录</div>
 	            </div>
 	            <div id="logo_box">
-	                <img src="../images/login_log.png" class="log_logo" />
+	                <img src="../../static/images/login_log.png" class="log_logo" />
 	            </div>
 	            <!-- 输入内容区域 -->
 	            <ul id="input_area">
@@ -109,7 +109,7 @@ body{overflow: hidden;height:auto;}
 	width: 15px;
 	height: 20px;
 	margin:15px 7px;
-	background:url(../images/user_logo.png) no-repeat;
+	background:url(../../static/images/user_logo.png) no-repeat;
 	background-size: 100% 100%;
 }
 #input_area li .title .pwd_logo{
@@ -117,7 +117,7 @@ body{overflow: hidden;height:auto;}
 	width: 17px;
 	height: 20px;
 	margin:15px 7px;
-	background:url(../images/pwd_logo.png) no-repeat;
+	background:url(../../static/images/pwd_logo.png) no-repeat;
 	background-size: 100% 100%;
 }
 #input_area li .content{
@@ -163,7 +163,7 @@ body{overflow: hidden;height:auto;}
 	display: inline-block;
     height: 14px;
     width: 14px;
-    background: url(../images/tip_icon.png) no-repeat;
+    background: url(../../static/images/tip_icon.png) no-repeat;
     background-size: 100% 100%;
     vertical-align: -18%;
     margin-left: 10px;

@@ -155,7 +155,7 @@
     position: absolute;
     left: -6px;
     top: 10px;
-    background: url(../images/liao_left.png) no-repeat;
+    background: url(../../static/images/liao_left.png) no-repeat;
     background-size: 100% 100%;
 }
 #user_info li .my:before{
@@ -165,7 +165,7 @@
     position: absolute;
     right: -6px;
     top: 10px;
-    background: url(../images/liao_right.png) no-repeat;
+    background: url(../../static/images/liao_right.png) no-repeat;
     background-size: 100% 100%;
 }
 #user_info .left .pho_box{

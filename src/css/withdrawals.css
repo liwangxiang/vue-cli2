@@ -54,7 +54,7 @@ body{
     display: block;
     width: 7px;
     height: 14px;
-    background: url(../images/top_right.png) no-repeat;
+    background: url(../../static/images/top_right.png) no-repeat;
     background-size: 100% 100%;
     margin-top: 23px;
     margin-left: 6px;
