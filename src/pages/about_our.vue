@@ -69,8 +69,8 @@
     </div>
 </template>
 <script>
-    import left_nav from '../components/left_nav'
-    import footer_nav from '../components/footer_nav'
+    import left_nav from '../components/common/left_nav'
+    import footer_nav from '../components/common/footer_nav'
 
     export default{
 	    components:{

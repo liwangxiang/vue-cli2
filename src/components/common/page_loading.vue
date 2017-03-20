@@ -1,11 +1,15 @@
 <template>
 	<div id="page_loading">
-		<span class="mask"></span>
+		<span class="mask" v-bind:class="{'in':loading_show == true }"></span>
 	</div>
 </template>
 <script>
+
 	export default{
-		
+		props:['loading_show']
+		// created:{  
+		// 	console.log(loading_show)
+		// }
 	}
 </script>
 <style>
@@ -23,5 +27,11 @@
 		display: block;
 		height: 100%;
 		width: 0%;
+		background: #8DD35F;
+		-webkit-transition: all 2s;
+		transition: all 2s;
+	}
+	#page_loading>.mask.in{
+		width: 100%;
 	}
 </style>

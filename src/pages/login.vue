@@ -48,7 +48,7 @@
         </div>
 </template>
 <script scoped>
-	import left_nav from '../components/left_nav'
+	import left_nav from '../components/common/left_nav'
 
 	export default{
 	    components:{

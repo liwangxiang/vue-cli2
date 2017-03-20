@@ -18,10 +18,10 @@
             <div id="user_info">
                 <div class="left">
                     <i class="user_icon"></i>
-                    <span class="user_name">我是谁</span>
+                    <span class="user_name" v-on:click.prevent="alertTip">我是谁</span>
                 </div>
-                <div class="right">
-                    <a href="email.html" v-on:click.prevent="alertTip">
+                <div class="right" >  <!-- 使用一般标签router.go()去跳转 -->
+                    <a href="email.html" target = '_blank'>
                         <span class="money_num">站内信</span>
                         <span class="email_num">21</span>
                         <i class="email_icon"></i>
@@ -76,10 +76,10 @@
 </template>
 <script>
     import {mapMutations} from 'vuex'
-    import left_nav from '../../components/left_nav'
-    import footer_nav from '../../components/footer_nav'
-    import tip_dialog from '../../components/tip_dialog'
-    import page_loading from '../../components/page_loading'
+    import left_nav from '../../components/common/left_nav'
+    import footer_nav from '../../components/common/footer_nav'
+    import tip_dialog from '../../components/common/tip_dialog'
+    import page_loading from '../../components/common/page_loading'
 
     export default{
         data(){
@@ -94,7 +94,7 @@
         },
         beforeRouteEnter (to, from, next) {
              //ajax
-             next();
+             // next();
         },
         beforeRouteLeave (to, from, next) {
             //离开页面-->显示loading条

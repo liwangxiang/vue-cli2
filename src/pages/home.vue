@@ -1,6 +1,7 @@
 <template>
     <div>
-    	<page_loading v-if="loading_show"></page_loading>
+    	<page_loading v-show="loading_show" v-bind:loading_show = "loading_show">
+    	</page_loading>
         <!-- 侧边导航 -->
         <left_nav></left_nav>
 	    <div id="mask"></div>
@@ -12,7 +13,7 @@
 	                <span></span>
 	                <span></span>
 	            </div>
-	            <img src="../../static/images/index_logo.png" class="center" />
+	            <img v-bind:src="getImgPath('../../static/images/index_logo.png')" class="center" />
 	            <div class="right_btn">
 	                <a href="login.html" id="loggin">登录</a>
 	                <a href="reg.html" id="reg">注册</a>
@@ -131,9 +132,10 @@
 <script>
         
         import '../../static/js/swiper.min.js'
-	    import left_nav from '../components/left_nav'
-	    import footer_nav from '../components/footer_nav'
-	    import page_loading from '../components/page_loading'
+        import { getImgPath } from '../components/common/mixin'
+	    import left_nav from '../components/common/left_nav'
+	    import footer_nav from '../components/common/footer_nav'
+	    import page_loading from '../components/common/page_loading'
 	    // import {cs} from '../service/getData'
         
         // cs('1')
@@ -168,6 +170,7 @@
 						        autoplayDisableOnInteraction: false
 						    });
 		    },
+		    mixins:[getImgPath],
 		    methods:{
 		    	getdata:function(){
 		    		this.money = "222222222";
